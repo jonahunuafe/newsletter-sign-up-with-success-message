@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="upper_layer">
+        <img src="./assets/images/illustration-sign-up-mobile.svg"/>
+      </div>
+
+      <div class="lower_layer_container">
+        <div class="lower_layer">
+          <h1>Stay updated!</h1>
+          <p id="join">Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="span_div">
+            <img src="./assets/images/icon-list.svg" width="5%">
+            <span>Product discovery and building what matters</span>
+          
+            <img src="./assets/images/icon-list.svg" width="5%">
+            <span>Measuring to ensure updates are a success</span>
+          
+            <img src="./assets/images/icon-list.svg" width="5%">
+            <span>And much more!</span>      
+          </div>
+        </div>
+        <form action="subscribe.html" target="_self" method="get">
+          <div class="error_div">
+            <label for="email_input" id="email_address">Email address</label>
+            <div class="email_checking" id="email_error"></div>
+          </div>
+
+          <div class="email_div">
+            <input type="email" name="Email" id="email_input" placeholder="email@company.com" autocomplete="on" onkeyup="validateEmail()" required />
+            <button class="btn" id="submitBtn">Subscribe to monthly newsletter</button>
+          </div> 
+        </form>
+      </div>
+      
+      <div id="desktop_image">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt=""/>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.linkedin.com/in/jonahunuafe" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/jonahunuafe" target="_blank">Jonah Unuafe</a>.
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

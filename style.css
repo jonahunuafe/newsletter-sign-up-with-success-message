@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Helvetica", sans-serif;
+}
+
+
+:root { 
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+--Tomato: hsl(4, 100%, 67%);
+}
+
+
+.upper_layer img {
+  width: 100%;
+}
+
+.span_div {
+  display: flex;
+  flex-direction: column;
+}
+
+#join {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.span_div span {
+  margin-left: 2rem;
+  position: relative;
+  bottom: 1.4rem;
+  font-size: 1.25rem;
+  color: var(--Dark-Slate-Grey);
+}
+
+.email_div {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.lower_layer {
+  margin: 2rem 1.5rem;
+}
+
+#email_address {
+  margin-left: 1.7rem;
+  font-weight: 700;
+  color: var(--Dark-Slate-Grey);
+}
+
+input[type="email"] {
+  padding: 1.5rem;
+  margin: 0.8rem 1.5rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Grey);
+}
+
+
+.email_checking {
+  font-size: 0.9rem;
+  display: block;
+  color: var(--Tomato);
+  position: relative;
+  float: right;
+  margin-right: 1.6rem;
+}
+
+.btn {
+  margin: 2rem 1.5rem 2rem 1.3rem;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--White);
+  background-color: var(--Charcoal-Grey);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(255,83,120);
+  background: linear-gradient(90deg, rgba(255,83,120,1) 0%, rgba(212,63,54,1) 57%, rgba(255,104,66,1) 100%);
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center; 
+  margin-bottom: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#desktop_image {
+  display: none;
+}
+
+
+
+
+
+/* FOR DESKTOP */
+@media (min-width: 768px) {
+
+  body {
+    background-color: var(--Dark-Slate-Grey);
+  }
+
+  .upper_layer img {
+    display: none;
+  }
+  
+  #desktop_image {
+    display: block;
+    position: relative;
+    left: 9rem !important;
+    margin: 1rem -0.2rem 0.8rem;
+  }
+
+  .container {
+    width: 85%;
+    display: flex;
+    background-color: var(--White);
+    border-radius: 0.5rem;
+    margin: -7.9rem 0 3.5rem 6.3rem !important;
+  }
+
+  .span_div span {
+    margin-left: 2.5rem;
+  }
+
+  .attribution {
+    position: absolute;
+    top: 36rem;
+    text-align: left;
+    margin-left: 7.8rem; 
+  }
+
+}
+
+
+
+/* FOR TABLETS WITH LARGE SCREEN SIZE */ 
+ @media (min-width: 850px) { 
+  #desktop_image {
+    display: block;
+    position: relative;
+    margin-right: 10.1rem !important;
+  }
+
+  .container {
+    position: relative;
+    top: 9rem;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 11rem !important;
+  }
+} 
+
+
+
+/* FOR IPADS AND TABLETS WITH SMALL SCREEN */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    background-color: var(--Dark-Slate-Grey);
+    overflow-x: hidden !important;
+  }
+
+  .upper_layer img {
+    width: 100% !important;
+    display: block;
+  }
+    
+
+  .span_div span {
+    margin-left: 3rem;
+    position: relative;
+    bottom: 1.7rem;
+  }
+       
+  .attribution {
+    display: none;
+  }
+    
+  #desktop_image {
+    display: none;
+  }
+    
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.8rem 3rem 2rem 3.8rem !important;
+  }
+
+}
